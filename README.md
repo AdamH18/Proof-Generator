@@ -7,7 +7,7 @@ Adam Holsinger
 
 ## Argument Generation
 
-The argument prover accepts files in the .bram format. Within a proof block, it will read in all assumptions and goals and prove whether the argument holds for each goal. Included is a helpful utility to generate arguments; argument_generator.py will walk a user through all the steps needed to generate an argument that can be read by the proof generator.
+The argument prover accepts files in the [.bram](https://github.com/Bram-Hub/Bram-File-Format) format. Within a proof block, it will read in all assumptions and goals and prove whether the argument holds for each goal. Included is a helpful utility to generate arguments; argument_generator.py will walk a user through all the steps needed to generate an argument that can be read by the proof generator.
 
 ## Reading a Proof
 
