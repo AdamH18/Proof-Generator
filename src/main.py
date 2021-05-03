@@ -1,6 +1,6 @@
 import os
 import sys
-import src.argument_parser as arg_p
+import argument_parser as arg_p
 from lxml import etree
 
 

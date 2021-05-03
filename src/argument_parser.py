@@ -1,5 +1,5 @@
 from lxml import etree, builder
-import src.logical_statements as ls
+import logical_statements as ls
 import datetime
 
 
