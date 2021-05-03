@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <author>Adam Holsinger</author>
+    <created>2021-03-31T02:03:28</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>A v B</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>A</raw>
+    </assumption>
+    <goal linenum="2">
+      <raw>A</raw>
+    </goal>
+    <goal linenum="3">
+      <raw>B</raw>
+    </goal>
+  </proof>
+</bram>

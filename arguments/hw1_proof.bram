@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Proof Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <created>2021-05-03T02:50:23</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>R$(Q$(~P))</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>(Q&amp;(~R))$(~P)</raw>
+    </assumption>
+    <assumption linenum="2">
+      <raw>R%P</raw>
+    </assumption>
+    <assumption linenum="3">
+      <raw>~~Q</raw>
+    </assumption>
+    <step linenum="4">
+      <raw>Q</raw>
+      <rule>Double Negation</rule>
+      <premise>3</premise>
+    </step>
+    <step linenum="5">
+      <rule>BRANCH</rule>
+      <premise>1</premise>
+    </step>
+    <step linenum="33">
+      <rule>OPEN</rule>
+      <premise>1</premise>
+    </step>
+  </proof>
+  <proof id="1">
+    <step linenum="6">
+      <raw>~R</raw>
+      <rule>Breakdown Conditional</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="7">
+      <rule>BRANCH</rule>
+      <premise>2</premise>
+      <premise>7</premise>
+    </step>
+    <step linenum="32">
+      <rule>OPEN</rule>
+      <premise>7</premise>
+    </step>
+  </proof>
+  <proof id="2">
+    <step linenum="8">
+      <raw>~(Q&amp;(~R))</raw>
+      <rule>Breakdown Conditional</rule>
+      <premise>1</premise>
+    </step>
+    <step linenum="9">
+      <rule>BRANCH</rule>
+      <premise>3</premise>
+      <premise>4</premise>
+    </step>
+    <step linenum="22">
+      <rule>CLOSED</rule>
+      <premise>3</premise>
+      <premise>4</premise>
+    </step>
+  </proof>
+  <proof id="3">
+    <step linenum="10">
+      <raw>R</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="11">
+      <raw>P</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="12">
+      <rule>CLOSED</rule>
+      <premise>6</premise>
+      <premise>10</premise>
+    </step>
+  </proof>
+  <proof id="4">
+    <step linenum="13">
+      <raw>~R</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="14">
+      <raw>~P</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="15">
+      <rule>BRANCH</rule>
+      <premise>5</premise>
+      <premise>6</premise>
+    </step>
+    <step linenum="21">
+      <rule>CLOSED</rule>
+      <premise>5</premise>
+      <premise>6</premise>
+    </step>
+  </proof>
+  <proof id="5">
+    <step linenum="16">
+      <raw>~Q</raw>
+      <rule>Breakdown Negated Conjunction</rule>
+      <premise>8</premise>
+    </step>
+    <step linenum="17">
+      <rule>CLOSED</rule>
+      <premise>4</premise>
+      <premise>16</premise>
+    </step>
+  </proof>
+  <proof id="6">
+    <step linenum="18">
+      <raw>~~R</raw>
+      <rule>Breakdown Negated Conjunction</rule>
+      <premise>8</premise>
+    </step>
+    <step linenum="19">
+      <raw>R</raw>
+      <rule>Double Negation</rule>
+      <premise>18</premise>
+    </step>
+    <step linenum="20">
+      <rule>CLOSED</rule>
+      <premise>13</premise>
+      <premise>19</premise>
+    </step>
+  </proof>
+  <proof id="7">
+    <step linenum="23">
+      <raw>~P</raw>
+      <rule>Breakdown Conditional</rule>
+      <premise>1</premise>
+    </step>
+    <step linenum="24">
+      <rule>BRANCH</rule>
+      <premise>8</premise>
+      <premise>9</premise>
+    </step>
+    <step linenum="31">
+      <rule>OPEN</rule>
+      <premise>9</premise>
+    </step>
+  </proof>
+  <proof id="8">
+    <step linenum="25">
+      <raw>R</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="26">
+      <raw>P</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="27">
+      <rule>CLOSED</rule>
+      <premise>23</premise>
+      <premise>26</premise>
+    </step>
+  </proof>
+  <proof id="9">
+    <step linenum="28">
+      <raw>~R</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="29">
+      <raw>~P</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="30">
+      <rule>OPEN</rule>
+    </step>
+  </proof>
+</bram>

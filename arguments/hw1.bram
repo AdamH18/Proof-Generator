@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <author>AH</author>
+    <created>2021-05-03T02:44:54</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>R$(Q$!P)</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>(Q&amp;!R)$!P</raw>
+    </assumption>
+    <assumption linenum="2">
+      <raw>R%P</raw>
+    </assumption>
+    <goal linenum="3">
+      <raw>!Q</raw>
+    </goal>
+  </proof>
+</bram>

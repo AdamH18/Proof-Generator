@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <created>2021-05-03T01:36:57</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>a&amp;b&amp;c&amp;d</raw>
+    </assumption>
+    <goal linenum="1">
+      <raw>a</raw>
+    </goal>
+  </proof>
+</bram>

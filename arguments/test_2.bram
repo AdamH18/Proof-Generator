@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <author>AH</author>
+    <created>2021-05-02T02:49:59</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>(!(A | B) % (A &amp; C))</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>A | !B &amp; C $ D</raw>
+    </assumption>
+    <goal linenum="2">
+      <raw>C</raw>
+    </goal>
+  </proof>
+</bram>

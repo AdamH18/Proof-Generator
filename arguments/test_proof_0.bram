@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Proof Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <created>2021-05-03T02:39:37</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>A|B</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>A</raw>
+    </assumption>
+    <assumption linenum="2">
+      <raw>~A</raw>
+    </assumption>
+    <step linenum="3">
+      <rule>CLOSED</rule>
+      <premise>1</premise>
+      <premise>2</premise>
+    </step>
+  </proof>
+</bram>

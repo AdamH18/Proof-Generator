@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Proof Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <created>2021-05-03T02:36:37</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>((a&amp;b)&amp;c)&amp;d</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>~a</raw>
+    </assumption>
+    <step linenum="2">
+      <raw>(a&amp;b)&amp;c</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="3">
+      <raw>d</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="4">
+      <raw>a&amp;b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="5">
+      <raw>c</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>2</premise>
+    </step>
+    <step linenum="6">
+      <raw>a</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>4</premise>
+    </step>
+    <step linenum="7">
+      <raw>b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>4</premise>
+    </step>
+    <step linenum="8">
+      <rule>CLOSED</rule>
+      <premise>1</premise>
+      <premise>6</premise>
+    </step>
+  </proof>
+</bram>
