@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<bram>
+  <program>Argument Proof Generator</program>
+  <version>1.0</version>
+  <metadata>
+    <created>2021-05-03T04:56:09</created>
+  </metadata>
+  <proof id="0">
+    <assumption linenum="0">
+      <raw>(~(A|B))%(A&amp;C)</raw>
+    </assumption>
+    <assumption linenum="1">
+      <raw>(A|((~B)&amp;C))$D</raw>
+    </assumption>
+    <assumption linenum="2">
+      <raw>~C</raw>
+    </assumption>
+    <step linenum="3">
+      <rule>BRANCH</rule>
+      <premise>1</premise>
+      <premise>2</premise>
+    </step>
+    <step linenum="28">
+      <rule>OPEN</rule>
+      <premise>2</premise>
+    </step>
+  </proof>
+  <proof id="1">
+    <step linenum="4">
+      <raw>~(A|B)</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="5">
+      <raw>A&amp;C</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="6">
+      <raw>~A</raw>
+      <rule>Breakdown Negated Disjunction</rule>
+      <premise>4</premise>
+    </step>
+    <step linenum="7">
+      <raw>~B</raw>
+      <rule>Breakdown Negated Disjunction</rule>
+      <premise>4</premise>
+    </step>
+    <step linenum="8">
+      <raw>A</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>5</premise>
+    </step>
+    <step linenum="9">
+      <raw>C</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>5</premise>
+    </step>
+    <step linenum="10">
+      <rule>CLOSED-END</rule>
+      <premise>7</premise>
+      <premise>9</premise>
+    </step>
+  </proof>
+  <proof id="2">
+    <step linenum="11">
+      <raw>~~(A|B)</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="12">
+      <raw>~(A&amp;C)</raw>
+      <rule>Breakdown Biconditional</rule>
+      <premise>0</premise>
+    </step>
+    <step linenum="13">
+      <raw>A|B</raw>
+      <rule>Double Negation</rule>
+      <premise>11</premise>
+    </step>
+    <step linenum="14">
+      <rule>BRANCH</rule>
+      <premise>3</premise>
+    </step>
+    <step linenum="27">
+      <rule>OPEN</rule>
+      <premise>3</premise>
+    </step>
+  </proof>
+  <proof id="3">
+    <step linenum="15">
+      <raw>~(A|((~B)&amp;C))</raw>
+      <rule>Breakdown Conditional</rule>
+      <premise>1</premise>
+    </step>
+    <step linenum="16">
+      <raw>~A</raw>
+      <rule>Breakdown Negated Disjunction</rule>
+      <premise>15</premise>
+    </step>
+    <step linenum="17">
+      <raw>~((~B)&amp;C)</raw>
+      <rule>Breakdown Negated Disjunction</rule>
+      <premise>15</premise>
+    </step>
+    <step linenum="18">
+      <rule>BRANCH</rule>
+      <premise>4</premise>
+    </step>
+    <step linenum="26">
+      <rule>OPEN</rule>
+      <premise>4</premise>
+    </step>
+  </proof>
+  <proof id="4">
+    <step linenum="19">
+      <raw>~A</raw>
+      <rule>Breakdown Negated Conjunction</rule>
+      <premise>12</premise>
+    </step>
+    <step linenum="20">
+      <rule>BRANCH</rule>
+      <premise>5</premise>
+      <premise>6</premise>
+    </step>
+    <step linenum="25">
+      <rule>OPEN</rule>
+      <premise>6</premise>
+    </step>
+  </proof>
+  <proof id="5">
+    <step linenum="21">
+      <raw>A</raw>
+      <rule>Breakdown Disjunction</rule>
+      <premise>13</premise>
+    </step>
+    <step linenum="22">
+      <rule>CLOSED-END</rule>
+      <premise>19</premise>
+      <premise>21</premise>
+    </step>
+  </proof>
+  <proof id="6">
+    <step linenum="23">
+      <raw>B</raw>
+      <rule>Breakdown Disjunction</rule>
+      <premise>13</premise>
+    </step>
+    <step linenum="24">
+      <rule>OPEN-END</rule>
+    </step>
+  </proof>
+</bram>

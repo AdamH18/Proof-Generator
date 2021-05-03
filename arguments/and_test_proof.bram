@@ -3,7 +3,7 @@
   <program>Argument Proof Generator</program>
   <version>1.0</version>
   <metadata>
-    <created>2021-05-03T02:36:37</created>
+    <created>2021-05-03T04:55:21</created>
   </metadata>
   <proof id="0">
     <assumption linenum="0">
@@ -33,19 +33,59 @@
       <premise>2</premise>
     </step>
     <step linenum="6">
+      <raw>a&amp;b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>3</premise>
+    </step>
+    <step linenum="7">
+      <raw>c</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>3</premise>
+    </step>
+    <step linenum="8">
       <raw>a</raw>
       <rule>Breakdown Conjunction</rule>
       <premise>4</premise>
     </step>
-    <step linenum="7">
+    <step linenum="9">
       <raw>b</raw>
       <rule>Breakdown Conjunction</rule>
       <premise>4</premise>
     </step>
-    <step linenum="8">
-      <rule>CLOSED</rule>
-      <premise>1</premise>
+    <step linenum="10">
+      <raw>a</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>5</premise>
+    </step>
+    <step linenum="11">
+      <raw>b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>5</premise>
+    </step>
+    <step linenum="12">
+      <raw>a</raw>
+      <rule>Breakdown Conjunction</rule>
       <premise>6</premise>
+    </step>
+    <step linenum="13">
+      <raw>b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>6</premise>
+    </step>
+    <step linenum="14">
+      <raw>a</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>7</premise>
+    </step>
+    <step linenum="15">
+      <raw>b</raw>
+      <rule>Breakdown Conjunction</rule>
+      <premise>7</premise>
+    </step>
+    <step linenum="16">
+      <rule>CLOSED-END</rule>
+      <premise>1</premise>
+      <premise>15</premise>
     </step>
   </proof>
 </bram>

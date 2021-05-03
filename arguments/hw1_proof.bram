@@ -3,7 +3,7 @@
   <program>Argument Proof Generator</program>
   <version>1.0</version>
   <metadata>
-    <created>2021-05-03T02:50:23</created>
+    <created>2021-05-03T04:55:40</created>
   </metadata>
   <proof id="0">
     <assumption linenum="0">
@@ -77,7 +77,7 @@
       <premise>2</premise>
     </step>
     <step linenum="12">
-      <rule>CLOSED</rule>
+      <rule>CLOSED-END</rule>
       <premise>6</premise>
       <premise>10</premise>
     </step>
@@ -111,7 +111,7 @@
       <premise>8</premise>
     </step>
     <step linenum="17">
-      <rule>CLOSED</rule>
+      <rule>CLOSED-END</rule>
       <premise>4</premise>
       <premise>16</premise>
     </step>
@@ -128,7 +128,7 @@
       <premise>18</premise>
     </step>
     <step linenum="20">
-      <rule>CLOSED</rule>
+      <rule>CLOSED-END</rule>
       <premise>13</premise>
       <premise>19</premise>
     </step>
@@ -161,7 +161,7 @@
       <premise>2</premise>
     </step>
     <step linenum="27">
-      <rule>CLOSED</rule>
+      <rule>CLOSED-END</rule>
       <premise>23</premise>
       <premise>26</premise>
     </step>
@@ -178,7 +178,7 @@
       <premise>2</premise>
     </step>
     <step linenum="30">
-      <rule>OPEN</rule>
+      <rule>OPEN-END</rule>
     </step>
   </proof>
 </bram>

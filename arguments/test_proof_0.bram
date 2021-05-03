@@ -3,7 +3,7 @@
   <program>Argument Proof Generator</program>
   <version>1.0</version>
   <metadata>
-    <created>2021-05-03T02:39:37</created>
+    <created>2021-05-03T04:55:55</created>
   </metadata>
   <proof id="0">
     <assumption linenum="0">
@@ -16,7 +16,7 @@
       <raw>~A</raw>
     </assumption>
     <step linenum="3">
-      <rule>CLOSED</rule>
+      <rule>CLOSED-END</rule>
       <premise>1</premise>
       <premise>2</premise>
     </step>
